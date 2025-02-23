@@ -13,44 +13,95 @@
             background-color: #f0f0f0;
         }
         .card {
-    width: 300px;
-    height: 350px;
-    background: linear-gradient(to bottom, blueviolet 40%, #c4c4c4 40%);
-    border-top-left-radius: 40px;   
-    border-bottom-left-radius: 0px; 
-    border-top-right-radius: 40px;  
-    border-bottom-right-radius: 40px; 
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 50px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-}
-        .profile-img {
-            width: 200px;
-            height: 200px;
-            border-radius: 50%;
-            border: 0px solid white;
-            position: absolute;
-            top: 30px;
-            background-color: #00aaff;
+            width: 350px;
+            height: 650px;
+            background: #b3a8a8;
+            border-radius: 20px 20px 20px 0 ;
+            overflow: hidden;
+            
         }
-        .profile-img img {
-            width: 100%;
-            height: 100%;
-            border-radius: 55%;
+        .card .top-section {
+            background: purple;
+            height: 33%;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+        }
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 60%;
+            border: 4px solid white;
+            position: absolute;
+            top: 33%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .h1 {
+            position: absolute;
+            top: 45%;
+            font-size: medium;
+            font-weight: 100;
+        }
+        .about {
+            position: absolute;
+            top: 48%;
+            font-size: medium;
+        }
+        .medals {
+            position: absolute;
+            top: 55%;
+            font-size: medium;
+        }
+        .given {
+            position: absolute;
+            top: 58%;
+            font-size: medium;
+            font-family: italic;
+        }
+        .personal {
+            position: absolute;
+            top: 72%;
+            font-size: medium;
+        }
+        .ul {
+            position: absolute;
+            top: 74%;
+            font-size: medium;
+            font-family: italic;
         }
     </style>
 </head>
 <body>
-
     <div class="card">
-        <div class="profile-img">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/Anil_Chauhan_Chief_of_Defence_Staff_%28CDS%29.jpg" alt="Genral Anil_Chauhan_Chief_of_Defence_Staff_">
-            <h5>Name:General Anil Chauhan</h5>
-            <h5>Dob:18|05|1961</h5>
-            <h5>Awards:Vishisht Seva Medal in 2011,Sena Medal in 2014</h5></div>
+        <div class="top-section"></div>
+        <img src="general.jfif" alt="Profile Image" class="profile-img">
+	<h1 class= "h1">  
+        NAME : GENERAL ANIL CHAUHAN
+    </h1>
+    <p class="about">
+        RANK: FOUR-STAR GENERAL <br>
+        2nd CHIEF OF DEFENCE STAFF<br>
+        DATE.OF.BIRTH : 18 May 1961(AGE-63)<br><br>
+    </p>
+    <p class="medals">
+    <u>MEDALS :</u><br>
+    </p>
+    <ol class="given">
+        <li>Param Vishisht Seva Medal</li>
+        <li>Uttam Yudh Seva Medal</li>
+        <li>Ati Vishisht Seva Medal</li>
+        <li> Sena Medal</li>
+        <li>Vishisht Seva Medal</li>
+    </ol>
+    <p class="personal">
+    <u>ABOUT :</u>
+    </p>
+    <ul class="ul">
+        <li>SPOUSE: MISS ANUPUMA</li>
+        <li>CHILDREN : MISS PRAGYA CHAUHAN</li>
+        <li> REGIMENT: 11th GORKHA PIFLES</li>
+        <li>DATE OF JOINING : 13 June 1981 </li>
+        <li>WORK EXPERIENCE : Over 40 years</li>
+    </ul>
     </div>
-    </body>
-</html>
+</body>
